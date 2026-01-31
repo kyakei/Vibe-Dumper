@@ -87,7 +87,7 @@ python3 proxy_chain.py --username proxy_username --password proxy_password --ip 
 - `--threads`: Number of concurrent workers for table processing (default: 5)
 - `--output`: Output directory for results (default: ./output)
 
-**Available Arguments (vibe-dumper.py):**
+**Available Arguments (proxy_chain.py):**
 - `--username`: Username for the proxy
 - `--password`: Password for the proxy
 - `--ip`: Endpoint for the proxy
