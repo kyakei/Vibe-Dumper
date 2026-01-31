@@ -73,11 +73,25 @@ python3 vibe-dumper.py
 python3 vibe-dumper.py --url https://example.com --threads 10 --output ./results
 ```
 
-**Available Arguments:**
+### Chaining Proxies
+
+Residential proxies can be chained with `vibe-dumper.py`.
+
+```bash
+python3 proxy_chain.py --username proxy_username --password proxy_password --ip proxy_endpoint --command "--url example.com --threads 5"
+```
+
+**Available Arguments (vibe-dumper.py):**
 - `--url`: Single URL to scan
 - `--file`: File containing URLs (one per line)
 - `--threads`: Number of concurrent workers for table processing (default: 5)
 - `--output`: Output directory for results (default: ./output)
+
+**Available Arguments (vibe-dumper.py):**
+- `--username`: Username for the proxy
+- `--password`: Password for the proxy
+- `--ip`: Endpoint for the proxy
+- `--command`: Command you want to use with `vibe-dumper.py`
 
 ## Output
 
